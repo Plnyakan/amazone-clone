@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Header from './Componets/Header';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
          <h1>login</h1>
        </Route>
        <Route path="/">
-         <h1>HomePage</h1>
+         <Header />
+         <h1>home</h1>
        </Route>
      </Switch>
 
@@ -22,12 +24,6 @@ function App() {
     </Router>
   );
 }
-
-     {/* {we need react- router} */}
-
-     {/* {localhost.com} */}
-     {/* {localhost.com/checkout} */}
-     {/* {localhost.com/login} */}
 
 export default App;
 
